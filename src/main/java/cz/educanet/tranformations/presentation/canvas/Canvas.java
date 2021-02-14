@@ -20,6 +20,7 @@ public class Canvas extends JPanel {
     private int cellHeight;
 
     public Canvas() {
+        setSize(800, 800);
         setBackground(Color.BLACK);
 
         addMouseListener(new CanvasMouseListener((x, y, button) -> {
