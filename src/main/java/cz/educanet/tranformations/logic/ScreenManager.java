@@ -28,9 +28,7 @@ public class ScreenManager {
 
     public boolean isFilledIn(Coordinate coordinate) { // TODO: Implement this
         ArrayList<Coordinate> list = new ArrayList<>(selectedPoints);
-        if(list.size()==3) {
-            return (jeVUhlu(list.get(2), list.get(1), list.get(0), coordinate)|| jeVUhlu(list.get(0), list.get(1), list.get(2), coordinate)) && (jeVUhlu(list.get(2), list.get(0), list.get(1), coordinate)|| jeVUhlu(list.get(1), list.get(0), list.get(2), coordinate));
-        }
+        if(list.size()==3) return (jeVUhlu(list.get(2), list.get(1), list.get(0), coordinate)|| jeVUhlu(list.get(0), list.get(1), list.get(2), coordinate)) && (jeVUhlu(list.get(2), list.get(0), list.get(1), coordinate)|| jeVUhlu(list.get(1), list.get(0), list.get(2), coordinate));
         return false;
     }
 
